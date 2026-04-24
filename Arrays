@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // 1. Criar um array com 5 nomes
+        string[] nomes = { "Ana", "Bruno", "Carla", "Diego", "Elena" };
+
+        // 2. Mostrar todos os nomes no console
+        Console.WriteLine("Todos os nomes:");
+        foreach (string nome in nomes)
+        {
+            Console.WriteLine(nome);
+        }
+
+        Console.WriteLine("\n---"); // Apenas uma linha para separar
+
+        // 3. Mostrar apenas o primeiro e o último
+        // O primeiro item está na posição [0]
+        // O último item está na posição [4] (ou nomes.Length - 1)
+        Console.WriteLine("Primeiro nome: " + nomes[0]);
+        Console.WriteLine("Último nome: " + nomes[4]);
+    }
+}
