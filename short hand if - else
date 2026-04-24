@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        // O Operador Ternário funciona assim: condicao ? valor_se_verdadeiro : valor_se_falso
+        string resultado = (numero % 2 == 0) ? "Número par" : "Número ímpar";
+
+        Console.WriteLine(resultado);
+    }
+}
